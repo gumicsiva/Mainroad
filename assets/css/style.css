@@ -55,14 +55,15 @@ body {
 	font-size: .875rem;
 	line-height: 1.6;
 	word-wrap: break-word;
-	background: #f7f7f7;
+	background-image: linear-gradient(Thistle, white);
+
 	-webkit-font-smoothing: antialiased;
 }
 
 .container {
 	position: relative;
 	width: 100%;
-	max-width: 1080px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -385,11 +386,15 @@ select {
 
 /* Header */
 .header {
-	background: #fff;
+	background-image: url("https://i.imgur.com/NlrvUwz.jpg");
+	background-size: 120%;
+	background-repeat:repeat;
+	background-position: center;
 }
 
 .logo {
 	padding: 25px;
+	text-align: center;
 }
 
 .logo__link {
@@ -423,30 +428,24 @@ select {
 }
 
 .logo__title {
-	font-size: 32px;
+	font-size: 10px;
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1;
-	color: #000;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 3px #312d44;
 }
 
 .logo__tagline {
 	display: inline-block;
 	padding-top: 10px;
 	margin-top: 10px;
+	padding: 1px;
 	font-size: 14px;
 	font-size: .875rem;
 	font-weight: 700;
 	line-height: 1;
 	color: {{ $highlightColor }};
-	border-top: 1px solid #ebebeb;
-}
-
-.divider {
-	height: 5px;
-	margin: 0;
-	background: {{ $highlightColor }};
-	border: 0;
 }
 
 /* Main menu */
@@ -657,7 +656,9 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .post__thumbnail img {
-	width: 100%;
+	width: 50%;
+	float: left;
+	padding: 15px;
 }
 
 .content a,
@@ -1068,7 +1069,6 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: uppercase;
-	border-bottom: 3px solid {{ $highlightColor }};
 }
 
 .widget__item {
@@ -1111,7 +1111,7 @@ textarea {
 	margin: 0 auto;
 	font-size: 11px;
 	cursor: pointer;
-	background: #fff;
+	background: rgb(255, 255, 255);
 	border: 1px solid #ebebeb;
 	border-radius: 0;
 	outline-offset: -2px;
