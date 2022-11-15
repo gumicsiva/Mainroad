@@ -1251,6 +1251,7 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+	
 	.wrapper,
 	.logo {
 		display: block;
@@ -1349,5 +1350,43 @@ textarea {
 		display: block;
 		font-size: 11px;
 		font-size: .6875rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	
+	.container {
+		margin: 0 auto;
+		width: auto;
+	}
+
+	.wrapper,
+	.logo {
+		display: block;
+		padding: 10px;
+	}
+
+	.sidebar {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+
+	.logo {
+		text-align: center;
+    }
+
+	.logo__link {
+		margin: 0 auto;
+	}
+
+	.logo__title {
+		font-size: 1.8rem;
+		font-kerning:normal;
+		text-align: center;
+	}
+
+	.sidebar {
+		margin-top: 20px;
 	}
 }
