@@ -666,7 +666,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .post__thumbnail img {
-	width: 60%;
+	width: 45%;
 	float: left;
 	padding: 15px;
 }
@@ -1354,6 +1354,7 @@ textarea {
 }
 
 @media screen and (max-width: 400px) {
+
 	
 	.container {
 		margin: 0 auto;
